@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5858fa3-4cf2-4fba-b351-4dca5da8ebe1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map_reduce_hdfs/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/map_reduce_hdfs/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map_reduce_hdfs/src/main/java/dev/elma/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/map_reduce_hdfs/src/main/java/dev/elma/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map_reduce_hdfs/src/main/java/dev/elma/VentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/map_reduce_hdfs/src/main/java/dev/elma/VentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/map_reduce_hdfs_App2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/map_reduce_hdfs_App2/src/main/java/dev/elma/MapperCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/map_reduce_hdfs_App2/src/main/java/dev/elma/ReducerCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map_reduce_hdfs/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/map_reduce_hdfs_App1/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map_reduce_hdfs/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/map_reduce_hdfs_App1/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map_reduce_hdfs/src/main/java/dev/elma/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/map_reduce_hdfs_App1/src/main/java/dev/elma/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map_reduce_hdfs/src/main/java/dev/elma/VentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/map_reduce_hdfs_App1/src/main/java/dev/elma/VentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map_reduce_hdfs/src/main/java/dev/elma/VentReduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/map_reduce_hdfs_App1/src/main/java/dev/elma/VentReduce.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,14 +47,27 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/eier/Desktop/javaProj/hdfs_big_data/map_reduce_hdfs/src/main/java/dev/elma/Main.java",
+    "onboarding.tips.debug.path": "/Users/eier/Desktop/javaProj/hdfs_big_data/map_reduce_hdfs_App2/src/main/java/dev/elma/Main.java",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dev.elma.Application" />
-      <module name="map_reduce_hdfs" />
+      <module name="map_reduce_hdfs_App1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.elma.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dev.elma.Main" />
+      <module name="map_reduce_hdfs_App2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="dev.elma.*" />
@@ -92,6 +109,7 @@
       <workItem from="1697187670905" duration="4526000" />
       <workItem from="1697229851639" duration="221000" />
       <workItem from="1697788079840" duration="6484000" />
+      <workItem from="1698178127698" duration="2935000" />
     </task>
     <servers />
   </component>

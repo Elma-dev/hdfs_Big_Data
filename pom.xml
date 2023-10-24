@@ -9,7 +9,8 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>map_reduce_hdfs</module>
+        <module>map_reduce_hdfs_App1</module>
+        <module>map_reduce_hdfs_App2</module>
     </modules>
 
     <properties>
