@@ -3,7 +3,6 @@ package dev.elma;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
-import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.InputFormat;
 import org.apache.hadoop.mapreduce.Job;
@@ -13,24 +12,23 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 import java.io.IOException;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
-public class Main {
+public class SuccessApp {
     public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException {
         Configuration configuration=new Configuration();
-        Job job=Job.getInstance(configuration);
+        Job job = Job.getInstance(configuration);
 
-        job.setMapperClass(MapperCounter.class);
-        job.setReducerClass(ReducerCounter.class);
-
-        job.setMapOutputKeyClass(Text.class);
-        job.setMapOutputValueClass(IntWritable.class);
+        job.setMapperClass(SuccessMapper.class);
+        job.setReducerClass(SuccessReducer.class);
 
         job.setInputFormatClass(TextInputFormat.class);
+
+        job.setMapOutputValueClass(IntWritable.class);
+        job.setMapOutputKeyClass(Text.class);
 
         FileInputFormat.addInputPath(job,new Path(args[0]));
         FileOutputFormat.setOutputPath(job,new Path(args[1]));
 
         job.waitForCompletion(true);
+
     }
 }
