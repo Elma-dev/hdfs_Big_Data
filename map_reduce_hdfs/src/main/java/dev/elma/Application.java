@@ -33,7 +33,7 @@ public class Application {
         //le fomat input
         job.setInputFormatClass(TextInputFormat.class);
         //le path des fichiers input/output
-        FileInputFormat.addInputPath(job,new Path(args[1]));
+        FileInputFormat.addInputPath(job,new Path(args[0]));
         FileOutputFormat.setOutputPath(job,new Path(args[1]));
 
         job.waitForCompletion(true);
